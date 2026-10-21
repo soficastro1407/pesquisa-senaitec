@@ -15,52 +15,172 @@
             width="200px" height="200px">
             <h1>Pesquisa SenaiTec</h1>   
         </header>
-         <section>
-        <form action="index.html" method="get">
-            <fieldset>
-                <legend>Dados Pessoais</legend>
-
+        <section>
+            <form action="index.html" method="get">
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    
+                    
+                    <label for="">Nome:</label>
+                    <input type="text" name="UserNome" id="UserNome" required>
+                    <br>
+                    
+                    <label for="UserAge">Idade:</label>
+                    <input type="number" ame="UserAge" id="UserAge" required min="12" max="100">
+                    
+                    
+                    <br>
+                    <label for="UserBirthDate">Data de Nascimento:</label>
+                    <input type="date" ame="UserBirthDate" id="UserBirthDate">
+                    
+                    <br>
+                    <label for="UserEmail">Email:</label>
+                    <input type="Email" ame="UserEmail" id="UserEmail" required>
+                    
+                    <br>
+                    <label for="Userphone">Telefone:</label>
+                    <input type="Userphone" ame="Userphone" id="Userphone" pattern="[0-9] {11}" placeholder="21987654321">
+                    
+                    
+                    <br>
+                    <label for="UserImage">upload da foto:</label>
+                    <input type="file" ame="UserImage" id="Userphone">
+                    
+                    
+                </fieldset>
                 
-                <label for="">Nome:</label>
-                <input type="text" name="UserNome" id="UserNome" required>
-                <br>
+                <fieldset>
+                    <legend>Perfil</legend>
+                    
+                    <p>Gênero</p>
+                    
+                    <input type="radio" 
+                    name="userGender"
+                    id="userGender" value="masdculino">
+                    <label 
+                    for="userGender">Masculino</label>
+                    <br>
+                    <input type="radio" 
+                    name="userGender"
+                    id="Femenino" value="Feminino">
+                    <label 
+                    for="userGender">Femenino</label>
+                    <br>
+                    
+                    <input type="radio" 
+                    name="userGender" value="Prefiro não informar"> 
+                    <label 
+                    for="userGender">Prefiro não informar</label>
+                    <br>
 
-                <label for="UserAge">Idade:</label>
-                <input type="number" ame="UserAge" id="UserAge" required min="12" max="100">
+                    <label for="userMaritalStatus">Estado civil</label>
+                    <select name="userMaritalStatus" id="userMaritalStatus">
+                    <option value="">Selecione...</Selecione></option>
+                    <option value="solteiro">solteiro(a)</option>
+                    <option value="casado">casado(a)</option>
+                    <option value="divorciado">divorciado(a)</option>
+                    <option value="viuvo">viúvo(a)</option>
+                    <option value="uniaoEstaval">união Estável</option>    
+                    </select>
+                    <br>
+                    <label for="userState">Estado:</label>
+                    <select name="userState" id="userState">
 
 
-                <br>
-                <label for="UserBirthDate">Data de Nascimento:</label>
-                <input type="date" ame="UserBirthDate" id="UserBirthDate">
+                    <option value="">Selecione...</option>
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Destrito Federal">Destrito Federalo</option>
+                    <option value="Espírito Santo">Espirito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                    </select>
+                    <br>
 
-                <br>
-                <label for="UserEmail">Email:</label>
-                <input type="Email" ame="UserEmail" id="UserEmail" required>
+                    <label for="">Cidade</label>
+                    <input type="text" name="userCity" id="userCity"
+                    placeholder="Fortaleza">
+                   
 
-                <br>
-                <label for="Userphone">Telefone:</label>
-                <input type="Userphone" ame="Userphone" id="Userphone" pattern="[0-9] {11}" placeholder="21987654321">
-
-                
-                <br>
-                <label for="UserImage">upload da foto:</label>
-                <input type="file" ame="UserImage" id="Userphone">
-
-
-            </fieldset>
- 
-            <button type="submit">Enviar</button>
-           
-
-           
-
-        </form>
-    </section>
-    </main>
-   
-        
+              
     
-     
-   
+
+                </fieldset>
+
+                <fieldset> Hábitos</fieldset>
+
+                 <!-- redes socias -->
+                <p>Redes sociais</p>
+
+                <label for="useerSocil1">Instagram:</label>
+                <input type="checkbox" name="userSocial" id="userSocil1" value="instagram">
+                <br>
+
+                <label for="useerSocil2">Instagram:</label>
+                <input type="checkbox" name="userSocial" id="userSocil2" value="facebook">
+                <br>
+
+                <label for="useerSocil3">Instagram:</label>
+                <input type="checkbox" name="userSocial" id="userSocil3" value="linkedin">
+                <br>
+            
+             
+                <!-- estilo musical -->
+                  <label for="userMusicStyle">Estilo musical:</label>
+                <input type="text" name="userMusilcStyle" id="userMusicStyles" list="userMusicStyles">
+                <datalist id="userMusicStyles">
+                    <option value="Rock"></option>
+                    <option value="Pop"></option>
+                    <option value="Sertanejo"></option>
+                    <option value="Funk"></option>
+                    <option value="Pagode"></option>
+                    <option value="Forró"></option>
+
+
+
+                </datalist>
+                <br>
+
+
+                  <!-- cor favorita -->
+                   <label for="">Cor favorita</label>
+                   <input type="color" name="userFavoriteColor" id="userFavoriteColor">
+
+                </fieldset>
+                
+                <button type="submit">Enviar</button>
+                
+                
+                
+                
+            </form>
+        </section>
+    </main>
+    
+    
+    
+    
+    
 </body>
 </html>
