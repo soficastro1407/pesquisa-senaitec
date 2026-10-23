@@ -16,7 +16,7 @@
             <h1>Pesquisa SenaiTec</h1>   
         </header>
         <section>
-            <form action="index.html" method="get">
+            <form action="https://formspree.io/f/xrppgwla" method="post">
                 <fieldset>
                     <legend>Dados Pessoais</legend>
                     
@@ -39,7 +39,7 @@
                     
                     <br>
                     <label for="Userphone">Telefone:</label>
-                    <input type="Userphone" ame="Userphone" id="Userphone" pattern="[0-9] {11}" placeholder="21987654321">
+                    <input type="Userphone" ame="Userphone" id="Userphone" pattern="[0-9]{11}" placeholder="21987654321">
                     
                     
                     <br>
@@ -84,7 +84,7 @@
                     </select>
                     <br>
                     <label for="userState">Estado:</label>
-                    <select name="userState" id="userState">
+                    <select name="userState" id="userState" required>
                         
                         
                         <option value="">Selecione...</option>
@@ -133,16 +133,16 @@
                 <!-- redes socias -->
                 <p>Redes sociais</p>
                 
-                <label for="useerSocil1">Instagram:</label>
                 <input type="checkbox" name="userSocial" id="userSocil1" value="instagram">
+                <label for="useerSocil1">Instagram:</label>
                 <br>
                 
-                <label for="useerSocil2">facebook:</label>
                 <input type="checkbox" name="userSocial" id="userSocil2" value="facebook">
+                <label for="useerSocil2">facebook:</label>
                 <br>
                 
-                <label for="useerSocil3">linkedin:</label>
                 <input type="checkbox" name="userSocial" id="userSocil3" value="linkedin">
+                <label for="useerSocil3">linkedin:</label>
                 <br>
                 
                 
@@ -178,7 +178,7 @@
                 <legend>Nivel de satisfação com SenaiTec:</legend>
                 
                 <br>
-                <label for="userSatisfaction">Satisfação</label>
+                <label for="userSatisfaction"></label>
                 <br> 
                 <input type="radio" name="userSatisfaction" id="userSatisfaction1">
                 <label for="userSatisfaction">otima</label>
@@ -199,9 +199,28 @@
                 
                 
             </fieldset>
+            <br>
+
+            <fieldset>
+               <legend>Termos de uso</legend>
+                
+               <input type="checkbox" name="userLGPD" id="userLGPD" value="LGPD" required>
+               <label for="userLGPD">Eu aceito participar da pesquisa!</label>
+                <br>
+                
+                <input type="checkbox" name="userConfirmarEmail" id="userConfirmarEmail" value="email">
+                <label for="userConfirmarEmail">Desejo receber termos por email!</label>
+                <br>
+               
+                
+            </fieldset>
+
+     
+
             
             
             <button type="submit">Enviar</button>
+            <button type="reset">limpar</button>
             
             
             
